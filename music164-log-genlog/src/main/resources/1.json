@@ -1,0 +1,76 @@
+{
+  "appChannel": "anroid bus",
+  "appErrorLogs": [
+    {
+      "createdAtMs": 1544680320000,
+      "errorBrief": "at cn.lift.appIn.control.CommandUtil.getInfo(CommandUtil.java:67)",
+      "errorDetail": "java.lang.NullPointerException at cn.lift.appIn.web.AbstractBaseController.validInbound(AbstractBaseController.java:72) at cn.lift.dfdf.web.AbstractBaseController.validInbound",
+      "logType": "error"
+    }
+  ],
+  "appEventLogs": [
+    {
+      "createdAtMs": 1544678400000,
+      "duration": "04:08",
+      "eventId": "play",
+      "logType": "event",
+      "mark": "2",
+      "musicID": "今夜你会不会来",
+      "playTime": "1544678400000"
+    },
+    {
+      "createdAtMs": 1544678640000,
+      "duration": "03:31",
+      "eventId": "play",
+      "logType": "event",
+      "mark": "2",
+      "musicID": "晚秋",
+      "playTime": "1544678640000"
+    },
+    {
+      "createdAtMs": 1544679840000,
+      "eventId": "black",
+      "logType": "event",
+      "mark": "-5",
+      "musicID": "忽然"
+    },
+    {
+      "createdAtMs": 1544631420000,
+      "duration": "00:20",
+      "eventId": "skip",
+      "logType": "event",
+      "mark": "-1",
+      "musicID": "街灯晚餐",
+      "playTime": "1544631420000"
+    },
+    {
+      "createdAtMs": 1544642760000,
+      "eventId": "nofavourite",
+      "logType": "event",
+      "mark": "-3",
+      "musicID": "第一眼"
+    },
+    {
+      "createdAtMs": 1544645580000,
+      "eventId": "favourite",
+      "logType": "event",
+      "mark": "3"
+    }
+  ],
+  "appPageLogs": [],
+  "appPlatform": "android",
+  "appStartupLogs": [],
+  "appUsageLogs": [
+    {
+      "createdAtMs": 1544678580000,
+      "logType": "usage",
+      "singleDownloadTraffic": "4",
+      "singleUploadTraffic": "459",
+      "singleUseDurationSecs": "2"
+    }
+  ],
+  "appVersion": "2.0.0",
+  "deviceId": "Device000021",
+  "deviceStyle": "iphone 6",
+  "osType": "11.0"
+}

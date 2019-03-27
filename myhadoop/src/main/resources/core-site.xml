@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <name>hdfs://s101:8020</name>
+    </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <name>/home/centos/hadoop</name>
+    </property>
+</configuration>
+

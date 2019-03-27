@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/myhadoop/pom.xml" />
+        <option value="$PROJECT_DIR$/myzk/pom.xml" />
+        <option value="$PROJECT_DIR$/myhive/pom.xml" />
+        <option value="$PROJECT_DIR$/myavro/pom.xml" />
+        <option value="$PROJECT_DIR$/myflume/pom.xml" />
+        <option value="$PROJECT_DIR$/mycdh/pom.xml" />
+        <option value="$PROJECT_DIR$/music164-log-genlog/pom.xml" />
+        <option value="$PROJECT_DIR$/music164-log-logetl/pom.xml" />
+        <option value="$PROJECT_DIR$/music164-log-userdraw/pom.xml" />
+        <option value="$PROJECT_DIR$/mykafka/pom.xml" />
+        <option value="$PROJECT_DIR$/myhbase/pom.xml" />
+        <option value="$PROJECT_DIR$/myspark2/pom.xml" />
+        <option value="$PROJECT_DIR$/umeng-genlog/pom.xml" />
+        <option value="$PROJECT_DIR$/umeng-log-genLog/pom.xml" />
+        <option value="$PROJECT_DIR$/umeng-log-spark/pom.xml" />
+        <option value="$PROJECT_DIR$/umeng-log-parseLog/pom.xml" />
+        <option value="$PROJECT_DIR$/umeng-log-hive/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,26 @@
+{
+  "boss": "赵洪洋",
+  "age": 20,
+  "wife": [
+    "feng",
+    "bing",
+    "lu"
+  ],
+  "employee": [
+    {
+      "name": "gang",
+      "age": 20,
+      "wife": "yui"
+    },
+    {
+      "name": "wu",
+      "age": 21,
+      "wife": "kong"
+    },
+    {
+      "name": "bao",
+      "age": 22,
+      "wife": "niu"
+    }
+  ]
+}

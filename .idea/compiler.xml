@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="music164-log-genlog" />
+        <module name="music164-log-logetl" />
+        <module name="music164-log-userdraw" />
+        <module name="myavro" />
+        <module name="mycdh" />
+        <module name="myflume" />
+        <module name="myhadoop" />
+        <module name="myhbase" />
+        <module name="myhive" />
+        <module name="mykafka" />
+        <module name="myspark2" />
+        <module name="myzk" />
+        <module name="umeng-log-genLog" />
+        <module name="umeng-log-hive" />
+        <module name="umeng-log-parseLog" />
+        <module name="umeng-log-spark" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="music164-log-genlog" target="1.8" />
+      <module name="music164-log-logetl" target="1.8" />
+      <module name="music164-log-userdraw" target="1.8" />
+      <module name="myavro" target="1.8" />
+      <module name="mycdh" target="1.8" />
+      <module name="myflume" target="1.8" />
+      <module name="myhadoop" target="1.8" />
+      <module name="myhbase" target="1.8" />
+      <module name="myhive" target="1.5" />
+      <module name="mykafka" target="1.8" />
+      <module name="myspark2" target="1.8" />
+      <module name="myzk" target="1.8" />
+      <module name="umeng-log-genLog" target="1.8" />
+      <module name="umeng-log-hive" target="1.8" />
+      <module name="umeng-log-parseLog" target="1.8" />
+      <module name="umeng-log-spark" target="1.8" />
+      <module name="umeng_genlog" target="1.8" />
+      <module name="umeng_logetl" target="1.8" />
+      <module name="umeng_spark" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+{
+  "namespace": "com.oldboy",
+  "type":"record",
+  "name":"Event",
+  "fields":[
+    {"name":"headers","type":"null"},
+    {"name":"body","type":"string"}]
+}
