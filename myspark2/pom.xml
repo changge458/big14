@@ -50,6 +50,11 @@
             <artifactId>hadoop-yarn-api</artifactId>
             <version>2.7.3</version>
         </dependency>
+        <dependency>
+            <groupId>com.crealytics</groupId>
+            <artifactId>spark-excel_2.11</artifactId>
+            <version>0.11.1</version>
+        </dependency>
     </dependencies>
 
 

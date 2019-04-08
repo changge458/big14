@@ -1,0 +1,187 @@
+{
+  "took": 4,
+  "timed_out": false,
+  "_shards": {
+    "total": 7,
+    "successful": 7,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 18,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": ".kibana_1",
+        "_type": "doc",
+        "_id": "space:default",
+        "_score": 1.0,
+        "_source": {
+          "space": {
+            "name": "Default",
+            "description": "This is your default space!",
+            "color": "#00bfb3",
+            "_reserved": true
+          },
+          "type": "space",
+          "updated_at": "2019-03-29T08:35:26.591Z"
+        }
+      },
+      {
+        "_index": ".kibana_1",
+        "_type": "doc",
+        "_id": "maps-telemetry:maps-telemetry",
+        "_score": 1.0,
+        "_source": {
+          "maps-telemetry": {
+            "mapsTotalCount": 0,
+            "timeCaptured": "2019-03-29T08:35:26.595Z",
+            "attributesPerMap": {
+              "dataSourcesCount": {
+                "min": 0,
+                "max": 0,
+                "avg": 0
+              },
+              "layersCount": {
+                "min": 0,
+                "max": 0,
+                "avg": 0
+              },
+              "layerTypesCount": {},
+              "emsVectorLayersCount": {}
+            }
+          },
+          "type": "maps-telemetry",
+          "updated_at": "2019-03-29T08:35:26.595Z"
+        }
+      },
+      {
+        "_index": ".kibana_1",
+        "_type": "doc",
+        "_id": "telemetry:telemetry",
+        "_score": 1.0,
+        "_source": {
+          "telemetry": {
+            "enabled": false
+          },
+          "type": "telemetry",
+          "updated_at": "2019-03-29T08:35:56.506Z"
+        }
+      },
+      {
+        "_index": ".kibana_1",
+        "_type": "doc",
+        "_id": "config:6.7.0",
+        "_score": 1.0,
+        "_source": {
+          "config": {
+            "buildNum": 20221,
+            "defaultIndex": "34d7ed20-51fe-11e9-b403-a50ffefaf929"
+          },
+          "type": "config",
+          "updated_at": "2019-03-29T08:39:46.779Z"
+        }
+      },
+      {
+        "_index": ".kibana_1",
+        "_type": "doc",
+        "_id": "index-pattern:34d7ed20-51fe-11e9-b403-a50ffefaf929",
+        "_score": 1.0,
+        "_source": {
+          "index-pattern": {
+            "title": "logstash-*",
+            "timeFieldName": "@timestamp",
+            "fields": "[{\"name\":\"@timestamp\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"@version\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"geoip.ip\",\"type\":\"ip\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"geoip.latitude\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"geoip.location\",\"type\":\"geo_point\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"geoip.longitude\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"host\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"host.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"message\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false}]"
+          },
+          "type": "index-pattern",
+          "migrationVersion": {
+            "index-pattern": "6.5.0"
+          },
+          "updated_at": "2019-03-29T08:41:44.266Z"
+        }
+      },
+      {
+        "_index": ".kibana_task_manager",
+        "_type": "_doc",
+        "_id": "oss_telemetry-vis_telemetry",
+        "_score": 1.0,
+        "_source": {
+          "type": "task",
+          "task": {
+            "taskType": "vis_telemetry",
+            "state": "{\"runs\":1}",
+            "params": "{}",
+            "attempts": 1,
+            "scheduledAt": "2019-03-29T08:35:26.293Z",
+            "runAt": "2019-03-29T16:00:00.000Z",
+            "status": "idle"
+          },
+          "kibana": {
+            "uuid": "e4f813b2-73e7-4fa7-a473-0870c081e8b7",
+            "version": 6070099,
+            "apiVersion": 1
+          }
+        }
+      },
+      {
+        "_index": ".kibana_task_manager",
+        "_type": "_doc",
+        "_id": "Maps-maps_telemetry",
+        "_score": 1.0,
+        "_source": {
+          "type": "task",
+          "task": {
+            "taskType": "maps_telemetry",
+            "state": "{\"runs\":1,\"stats\":{\"mapsTotalCount\":0,\"timeCaptured\":\"2019-03-29T08:35:26.595Z\",\"attributesPerMap\":{\"dataSourcesCount\":{\"min\":0,\"max\":0,\"avg\":0},\"layersCount\":{\"min\":0,\"max\":0,\"avg\":0},\"layerTypesCount\":{},\"emsVectorLayersCount\":{}}}}",
+            "params": "{}",
+            "attempts": 0,
+            "scheduledAt": "2019-03-29T08:35:26.152Z",
+            "runAt": "2019-03-29T16:00:00.000Z",
+            "status": "idle"
+          },
+          "kibana": {
+            "uuid": "e4f813b2-73e7-4fa7-a473-0870c081e8b7",
+            "version": 6070099,
+            "apiVersion": 1
+          }
+        }
+      },
+      {
+        "_index": "logstash-2019.03.29",
+        "_type": "doc",
+        "_id": "7QwuyGkBoe3IWymWYN30",
+        "_score": 1.0,
+        "_source": {
+          "@version": "1",
+          "@timestamp": "2019-03-29T06:41:16.411Z",
+          "message": "",
+          "host": "s101"
+        }
+      },
+      {
+        "_index": "logstash-2019.03.29",
+        "_type": "doc",
+        "_id": "B_9jyGkBFm0GN5o15_MB",
+        "_score": 1.0,
+        "_source": {
+          "@version": "1",
+          "@timestamp": "2019-03-29T07:39:44.125Z",
+          "message": "helloworld",
+          "host": "s101"
+        }
+      },
+      {
+        "_index": "logstash-2019.03.29",
+        "_type": "doc",
+        "_id": "8Ax1yGkBoe3IWymWwd11",
+        "_score": 1.0,
+        "_source": {
+          "@version": "1",
+          "@timestamp": "2019-03-29T07:59:14.170Z",
+          "message": "sss",
+          "host": "s101"
+        }
+      }
+    ]
+  }
+}

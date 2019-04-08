@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/music164-log-userdraw/music164-log-userdraw.iml" filepath="$PROJECT_DIR$/music164-log-userdraw/music164-log-userdraw.iml" />
       <module fileurl="file://$PROJECT_DIR$/myavro/myavro.iml" filepath="$PROJECT_DIR$/myavro/myavro.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycdh/mycdh.iml" filepath="$PROJECT_DIR$/mycdh/mycdh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myelasticsearch/myelasticsearch.iml" filepath="$PROJECT_DIR$/myelasticsearch/myelasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/myflume/myflume.iml" filepath="$PROJECT_DIR$/myflume/myflume.iml" />
       <module fileurl="file://$PROJECT_DIR$/myhadoop/myhadoop.iml" filepath="$PROJECT_DIR$/myhadoop/myhadoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/myhbase/myhbase.iml" filepath="$PROJECT_DIR$/myhbase/myhbase.iml" />

@@ -12,6 +12,7 @@
         <module name="music164-log-userdraw" />
         <module name="myavro" />
         <module name="mycdh" />
+        <module name="myelasticsearch" />
         <module name="myflume" />
         <module name="myhadoop" />
         <module name="myhbase" />
@@ -31,6 +32,7 @@
       <module name="music164-log-userdraw" target="1.8" />
       <module name="myavro" target="1.8" />
       <module name="mycdh" target="1.8" />
+      <module name="myelasticsearch" target="1.8" />
       <module name="myflume" target="1.8" />
       <module name="myhadoop" target="1.8" />
       <module name="myhbase" target="1.8" />

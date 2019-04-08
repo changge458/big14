@@ -1,0 +1,8 @@
+filepath=file:///G:/靖佳齿科数据/20190315 金属打磨生产数据样本.xlsx
+#filepath=file:///G:/fulldata.csv
+#filepath=file:///G:/靖佳齿科数据/2019——3.23/20190323 设计货件等级样本.xls
+label_name=货件等级
+save_file=file:///G:/Jingjia_test2.csv
+#real_test_file=file:///G:/靖佳齿科数据/金属打磨货件等级测试.csv
+real_test_file=file:///G:/靖佳齿科数据/20190315 金属打磨生产数据样本.csv
+rule_file_path=file:///D:/货件等级2.28.xlsx

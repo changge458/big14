@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/umeng-log-spark/pom.xml" />
         <option value="$PROJECT_DIR$/umeng-log-parseLog/pom.xml" />
         <option value="$PROJECT_DIR$/umeng-log-hive/pom.xml" />
+        <option value="$PROJECT_DIR$/myelasticsearch/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.elasticsearch.plugin:x-pack-sql-jdbc:6.7.0">
+    <CLASSES>
+      <root url="jar://D:/Program/apache-maven-3.5.0/repository/org/elasticsearch/plugin/x-pack-sql-jdbc/6.7.0/x-pack-sql-jdbc-6.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Program/apache-maven-3.5.0/repository/org/elasticsearch/plugin/x-pack-sql-jdbc/6.7.0/x-pack-sql-jdbc-6.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Program/apache-maven-3.5.0/repository/org/elasticsearch/plugin/x-pack-sql-jdbc/6.7.0/x-pack-sql-jdbc-6.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
