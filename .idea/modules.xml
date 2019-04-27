@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/music164-log-logetl/music164-log-logetl.iml" filepath="$PROJECT_DIR$/music164-log-logetl/music164-log-logetl.iml" />
       <module fileurl="file://$PROJECT_DIR$/music164-log-userdraw/music164-log-userdraw.iml" filepath="$PROJECT_DIR$/music164-log-userdraw/music164-log-userdraw.iml" />
       <module fileurl="file://$PROJECT_DIR$/myavro/myavro.iml" filepath="$PROJECT_DIR$/myavro/myavro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybeam/mybeam.iml" filepath="$PROJECT_DIR$/mybeam/mybeam.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycdh/mycdh.iml" filepath="$PROJECT_DIR$/mycdh/mycdh.iml" />
       <module fileurl="file://$PROJECT_DIR$/myelasticsearch/myelasticsearch.iml" filepath="$PROJECT_DIR$/myelasticsearch/myelasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/myflume/myflume.iml" filepath="$PROJECT_DIR$/myflume/myflume.iml" />
@@ -14,7 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/myhbase/myhbase.iml" filepath="$PROJECT_DIR$/myhbase/myhbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/myhive/myhive.iml" filepath="$PROJECT_DIR$/myhive/myhive.iml" />
       <module fileurl="file://$PROJECT_DIR$/mykafka/mykafka.iml" filepath="$PROJECT_DIR$/mykafka/mykafka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myspark2/myspark2.iml" filepath="$PROJECT_DIR$/myspark2/myspark2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspark/myspark.iml" filepath="$PROJECT_DIR$/myspark/myspark.iml" />
       <module fileurl="file://$PROJECT_DIR$/myzk/myzk.iml" filepath="$PROJECT_DIR$/myzk/myzk.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjvm/testjvm.iml" filepath="$PROJECT_DIR$/testjvm/testjvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/umeng-log-genLog/umeng-log-genLog.iml" filepath="$PROJECT_DIR$/umeng-log-genLog/umeng-log-genLog.iml" />

@@ -77,7 +77,7 @@ public class TestHbase {
             Put put = new Put(Bytes.toBytes(i));
             put.setDurability(Durability.SKIP_WAL);
 
-            put.addColumn("f1".getBytes(), "name".getBytes(), ("tom" + i).getBytes());
+            put.addColumn("f1".getBytes(), "name".getBytes(), ("我爱你" + i).getBytes());
 
             list.add(put);
 

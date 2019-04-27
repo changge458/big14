@@ -21,6 +21,8 @@
         <option value="$PROJECT_DIR$/umeng-log-parseLog/pom.xml" />
         <option value="$PROJECT_DIR$/umeng-log-hive/pom.xml" />
         <option value="$PROJECT_DIR$/myelasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/myspark/pom.xml" />
+        <option value="$PROJECT_DIR$/mybeam/pom.xml" />
       </list>
     </option>
   </component>

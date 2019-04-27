@@ -7,30 +7,34 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="music164-log-genlog" />
-        <module name="music164-log-logetl" />
-        <module name="music164-log-userdraw" />
+        <module name="myflume" />
         <module name="myavro" />
+        <module name="umeng-log-hive" />
+        <module name="music164-log-genlog" />
+        <module name="myhive" />
+        <module name="big14" />
+        <module name="music164-log-logetl" />
+        <module name="myzk" />
         <module name="mycdh" />
         <module name="myelasticsearch" />
-        <module name="myflume" />
-        <module name="myhadoop" />
-        <module name="myhbase" />
-        <module name="myhive" />
-        <module name="mykafka" />
-        <module name="myspark2" />
-        <module name="myzk" />
-        <module name="umeng-log-genLog" />
-        <module name="umeng-log-hive" />
-        <module name="umeng-log-parseLog" />
+        <module name="mybeam" />
         <module name="umeng-log-spark" />
+        <module name="umeng-log-genLog" />
+        <module name="myhbase" />
+        <module name="umeng-log-parseLog" />
+        <module name="myspark" />
+        <module name="music164-log-userdraw" />
+        <module name="myhadoop" />
+        <module name="mykafka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="big14" target="1.8" />
       <module name="music164-log-genlog" target="1.8" />
       <module name="music164-log-logetl" target="1.8" />
       <module name="music164-log-userdraw" target="1.8" />
       <module name="myavro" target="1.8" />
+      <module name="mybeam" target="1.5" />
       <module name="mycdh" target="1.8" />
       <module name="myelasticsearch" target="1.8" />
       <module name="myflume" target="1.8" />
@@ -38,6 +42,7 @@
       <module name="myhbase" target="1.8" />
       <module name="myhive" target="1.5" />
       <module name="mykafka" target="1.8" />
+      <module name="myspark" target="1.8" />
       <module name="myspark2" target="1.8" />
       <module name="myzk" target="1.8" />
       <module name="umeng-log-genLog" target="1.8" />
@@ -48,5 +53,10 @@
       <module name="umeng_logetl" target="1.8" />
       <module name="umeng_spark" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="myelasticsearch" options="-parameters" />
+    </option>
   </component>
 </project>
