@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myflume" />
-        <module name="myavro" />
+        <module name="music164-log-userdraw" />
         <module name="umeng-log-hive" />
         <module name="music164-log-genlog" />
         <module name="myhive" />
@@ -23,7 +23,7 @@
         <module name="myhbase" />
         <module name="umeng-log-parseLog" />
         <module name="myspark" />
-        <module name="music164-log-userdraw" />
+        <module name="myavro" />
         <module name="myhadoop" />
         <module name="mykafka" />
       </profile>
@@ -34,7 +34,7 @@
       <module name="music164-log-logetl" target="1.8" />
       <module name="music164-log-userdraw" target="1.8" />
       <module name="myavro" target="1.8" />
-      <module name="mybeam" target="1.5" />
+      <module name="mybeam" target="1.8" />
       <module name="mycdh" target="1.8" />
       <module name="myelasticsearch" target="1.8" />
       <module name="myflume" target="1.8" />

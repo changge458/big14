@@ -2,92 +2,56 @@ package com.oldboy;
 
 import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.io.TextIO;
-import org.apache.beam.sdk.options.PipelineOptions;
+import org.apache.beam.sdk.io.hdfs.HadoopFileSystemOptions;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.apache.beam.sdk.transforms.*;
-import org.apache.beam.sdk.transforms.display.DisplayData;
-import org.apache.beam.sdk.transforms.windowing.BoundedWindow;
 import org.apache.beam.sdk.values.KV;
 import org.apache.beam.sdk.values.PCollection;
-import org.apache.beam.sdk.values.PDone;
+import org.apache.hadoop.conf.Configuration;
 
-import java.io.IOException;
-import java.nio.channels.SocketChannel;
-import java.nio.channels.WritableByteChannel;
+import java.util.Arrays;
 
 public class TestBeam {
 
-    public static void main(String[] args) {
-
-        PipelineOptions pipe = PipelineOptionsFactory.create();
-
-        Pipeline p = Pipeline.create(pipe);
-
-        // 一个根pipline转换，类似于TextIO.Read 或者 Create操作可以通过请求添加到pipline
-        PCollection<String> lines = p.apply(TextIO.read().from("file:///D:/teaching/1.txt"));
+    public static void main(String[] args) throws Exception {
 
 
-        PCollection<String> words = lines.apply(ParDo.of(new DoFn<String, String>() {
+        //spark提交： spark-submit  --class com.oldboy.TestBeam --master yarn --deploy-mode cluster  hdfs://mycluster/mybeam.jar hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
+        //spark提交： spark-submit  --class com.oldboy.TestBeam --master spark://s101:7077 --deploy-mode cluster  hdfs://mycluster/mybeam.jar hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
+        //flink提交： flink  run -m yarn-cluster  -c com.oldboy.TestBeam mybeam.jar  hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
 
+
+        HadoopFileSystemOptions options = PipelineOptionsFactory.create().as(HadoopFileSystemOptions.class);
+        Configuration conf = new Configuration();
+        conf.set("fs.defaultFS", "hdfs://mycluster");
+        conf.set("fs.hdfs.impl", "org.apache.hadoop.hdfs.DistributedFileSystem");
+        options.setHdfsConfiguration(Arrays.asList(conf));
+        Pipeline p = Pipeline.create(options);
+        PCollection<String> lines = p.apply("ReadLines", TextIO.read().from(args[0]));
+
+        //将line转换为word,并标1成对
+        PCollection<KV<String, Integer>> word_1 = lines.apply("extract words and mapping", ParDo.of(new DoFn<String, KV<String, Integer>>() {
             @ProcessElement
             public void processElement(ProcessContext context) {
-
-                String[] arr = context.element().split("\\s+");
-
-                for (String word : arr) {
-                    context.output(word);
+                String line = context.element();
+                for (String word : line.split("\\s+")) {
+                    context.output(KV.of(word, 1));
                 }
             }
         }));
 
+        PCollection<KV<String, Long>> word_count = word_1.apply(Count.perKey());
 
-        PCollection<KV<String, Long>> kv = words.apply(Count.<String>perElement());
-
-
-        PCollection<String> result = kv.apply("FormatResult", MapElements.via(new SimpleFunction<KV<String, Long>, String>() {
-            @Override
-            public String apply(KV input) {
-                System.out.println(input.getKey() + ":" + input.getValue());
-                return input.getKey() + ":" + input.getValue();
-
+        PCollection<String> result = word_count.apply("print", ParDo.of(new DoFn<KV<String, Long>, String>() {
+            @ProcessElement
+            public void processElement(ProcessContext context) {
+                KV<String, Long> kv = context.element();
+                System.out.println(kv.getKey() + ":" + kv.getValue());
+                context.output(kv.getKey() + ":" + kv.getValue());
             }
         }));
 
-        result.apply(TextIO.write().to("/file/xxx"));
-
+        result.apply(TextIO.write().to(args[1]));
         p.run().waitUntilFinish();
-
-
-//        // A Pipeline can have multiple root transforms:
-//        PCollection<String> moreLines =
-//                p.apply(TextIO.read().from("gs://bucket/other/dir/file*.txt"));
-//        PCollection<String> yetMoreLines =
-//                p.apply(Create.of("yet", "more", "lines").withCoder(StringUtf8Coder.of()));
-//
-//        // Further PTransforms can be applied, in an arbitrary (acyclic) graph.
-//        // Subsequent PTransforms (and intermediate PCollections etc.) are
-//        // implicitly part of the same Pipeline.
-//        PCollection<String> allLines =
-//                PCollectionList.of(lines).and(moreLines).and(yetMoreLines)
-//                        .apply(new Flatten<String>());
-//        PCollection<KV<String, Integer>> wordCounts =
-//                allLines
-//                        .apply(ParDo.of(new ExtractWords()))
-//                        .apply(new Count<String>());
-//        PCollection<String> formattedWordCounts =
-//                wordCounts.apply(ParDo.of(new FormatCounts()));
-//        formattedWordCounts.apply(TextIO.write().to("gs://bucket/dir/counts.txt"));
-//
-//        // PTransforms aren't executed when they're applied, rather they're
-//        // just added to the Pipeline.  Once the whole Pipeline of PTransforms
-//        // is constructed, the Pipeline's PTransforms can be run using a
-//        // PipelineRunner.  The default PipelineRunner executes the Pipeline
-//        // directly, sequentially, in this one process, which is useful for
-//        // unit tests and simple experiments:
-//        p.run();
-
-
     }
-
-
 }
