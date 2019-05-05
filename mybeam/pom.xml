@@ -11,6 +11,7 @@
 
     <properties>
         <spark.version>2.1.2</spark.version>
+        <beam.version>2.12.0</beam.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -20,34 +21,49 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+
+        <!-- beam 的 java sdk-->
         <dependency>
             <groupId>org.apache.beam</groupId>
             <artifactId>beam-sdks-java-core</artifactId>
-            <version>2.12.0</version>
+            <version>${beam.version}</version>
         </dependency>
 
+        <!-- beam 对kafka数据支持  -->
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-sdks-java-io-kafka</artifactId>
+            <version>${beam.version}</version>
+        </dependency>
+        <!-- beam 对hdfs数据支持  -->
         <dependency>
             <groupId>org.apache.beam</groupId>
             <artifactId>beam-sdks-java-io-hadoop-file-system</artifactId>
-            <version>2.12.0</version>
+            <version>${beam.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.beam</groupId>
-            <artifactId>beam-runners-flink_2.11</artifactId>
-            <version>2.12.0</version>
-        </dependency>
-
-
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
             <version>2.7.3</version>
         </dependency>
 
+        <!-- beam 对纯java运行模式 的支持  -->
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-runners-direct-java</artifactId>
+            <version>${beam.version}</version>
+        </dependency>
+        <!-- beam 对 flink运行模式 的支持  -->
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-runners-flink_2.11</artifactId>
+            <version>${beam.version}</version>
+        </dependency>
+        <!-- beam 对 spark运行模式 的支持  -->
         <dependency>
             <groupId>org.apache.beam</groupId>
             <artifactId>beam-runners-spark</artifactId>
-            <version>2.12.0</version>
+            <version>${beam.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.fasterxml.jackson.module</groupId>
@@ -55,17 +71,15 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>org.apache.beam</groupId>
-            <artifactId>beam-runners-direct-java</artifactId>
-            <version>2.12.0</version>
-        </dependency>
+
+
+
+        <!-- 源码相关依赖 -->
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>findbugs</artifactId>
             <version>3.0.1</version>
         </dependency>
-
         <dependency>
             <groupId>com.google.auto.value</groupId>
             <artifactId>auto-value-annotations</artifactId>
@@ -125,10 +139,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-
-
-
-
 </project>

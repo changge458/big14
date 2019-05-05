@@ -11,14 +11,14 @@ import org.apache.hadoop.conf.Configuration;
 
 import java.util.Arrays;
 
-public class TestBeam {
+public class WordCountBeam {
 
     public static void main(String[] args) throws Exception {
 
 
-        //spark提交： spark-submit  --class com.oldboy.TestBeam --master yarn --deploy-mode cluster  hdfs://mycluster/mybeam.jar hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
-        //spark提交： spark-submit  --class com.oldboy.TestBeam --master spark://s101:7077 --deploy-mode cluster  hdfs://mycluster/mybeam.jar hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
-        //flink提交： flink  run -m yarn-cluster  -c com.oldboy.TestBeam mybeam.jar  hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
+        //spark提交： spark-submit  --class com.oldboy.WordCountBeam --master yarn --deploy-mode cluster  hdfs://mycluster/mybeam.jar hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
+        //spark提交： spark-submit  --class com.oldboy.WordCountBeam --master spark://s101:7077 --deploy-mode cluster  hdfs://mycluster/mybeam.jar hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
+        //flink提交： flink  run -m yarn-cluster  -c com.oldboy.WordCountBeam mybeam.jar  hdfs://mycluster/readme.txt hdfs://mycluster/xxx/yyy
 
 
         HadoopFileSystemOptions options = PipelineOptionsFactory.create().as(HadoopFileSystemOptions.class);

@@ -17,11 +17,13 @@ public class TestHomework {
 
             //入口点，参数分别为连接串，连接超时时间，null
             ZooKeeper zk = new ZooKeeper(conn, 50000, null);
-
+            zk.setACL("/a",ZooDefs.Ids.OPEN_ACL_UNSAFE,-1 );
+            zk.setACL("/a/aa",ZooDefs.Ids.OPEN_ACL_UNSAFE,-1 );
+            zk.setACL("/a/b",ZooDefs.Ids.OPEN_ACL_UNSAFE,-1 );
 
             //testCreate("/a/b/c/d", zk);
             //testList("/a",zk);
-            testDelete("/a", zk, list);
+            testDelete("/a/bb", zk, list);
 
         } catch (Exception e) {
             e.printStackTrace();
